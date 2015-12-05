@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\core\file.cc" />
+    <ClCompile Include="..\core\http.cc" />
+    <ClCompile Include="..\core\json\fpconv.c" />
+    <ClCompile Include="..\core\json\lua_cjson.c" />
+    <ClCompile Include="..\core\json\strbuf.c" />
+    <ClCompile Include="..\core\link.cc" />
+    <ClCompile Include="..\core\loop.cc" />
+    <ClCompile Include="..\core\lua\lapi.c" />
+    <ClCompile Include="..\core\lua\lauxlib.c" />
+    <ClCompile Include="..\core\lua\lbaselib.c" />
+    <ClCompile Include="..\core\lua\lbitlib.c" />
+    <ClCompile Include="..\core\lua\lcode.c" />
+    <ClCompile Include="..\core\lua\lcorolib.c" />
+    <ClCompile Include="..\core\lua\lctype.c" />
+    <ClCompile Include="..\core\lua\ldblib.c" />
+    <ClCompile Include="..\core\lua\ldebug.c" />
+    <ClCompile Include="..\core\lua\ldo.c" />
+    <ClCompile Include="..\core\lua\ldump.c" />
+    <ClCompile Include="..\core\lua\lfunc.c" />
+    <ClCompile Include="..\core\lua\lgc.c" />
+    <ClCompile Include="..\core\lua\linit.c" />
+    <ClCompile Include="..\core\lua\liolib.c" />
+    <ClCompile Include="..\core\lua\llex.c" />
+    <ClCompile Include="..\core\lua\lmathlib.c" />
+    <ClCompile Include="..\core\lua\lmem.c" />
+    <ClCompile Include="..\core\lua\loadlib.c" />
+    <ClCompile Include="..\core\lua\lobject.c" />
+    <ClCompile Include="..\core\lua\lopcodes.c" />
+    <ClCompile Include="..\core\lua\loslib.c" />
+    <ClCompile Include="..\core\lua\lparser.c" />
+    <ClCompile Include="..\core\lua\lstate.c" />
+    <ClCompile Include="..\core\lua\lstring.c" />
+    <ClCompile Include="..\core\lua\lstrlib.c" />
+    <ClCompile Include="..\core\lua\ltable.c" />
+    <ClCompile Include="..\core\lua\ltablib.c" />
+    <ClCompile Include="..\core\lua\ltm.c" />
+    <ClCompile Include="..\core\lua\lundump.c" />
+    <ClCompile Include="..\core\lua\lvm.c" />
+    <ClCompile Include="..\core\lua\lzio.c" />
+    <ClCompile Include="..\core\util.cc" />
+    <ClCompile Include="bind.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\core\bind.h" />
+    <ClInclude Include="..\core\boot.h" />
+    <ClInclude Include="..\core\file.h" />
+    <ClInclude Include="..\core\http.h" />
+    <ClInclude Include="..\core\json\fpconv.h" />
+    <ClInclude Include="..\core\json\lua_cjson.h" />
+    <ClInclude Include="..\core\json\strbuf.h" />
+    <ClInclude Include="..\core\link.h" />
+    <ClInclude Include="..\core\loop.h" />
+    <ClInclude Include="..\core\lua\lapi.h" />
+    <ClInclude Include="..\core\lua\lauxlib.h" />
+    <ClInclude Include="..\core\lua\lcode.h" />
+    <ClInclude Include="..\core\lua\lctype.h" />
+    <ClInclude Include="..\core\lua\ldebug.h" />
+    <ClInclude Include="..\core\lua\ldo.h" />
+    <ClInclude Include="..\core\lua\lfunc.h" />
+    <ClInclude Include="..\core\lua\lgc.h" />
+    <ClInclude Include="..\core\lua\llex.h" />
+    <ClInclude Include="..\core\lua\llimits.h" />
+    <ClInclude Include="..\core\lua\lmem.h" />
+    <ClInclude Include="..\core\lua\lobject.h" />
+    <ClInclude Include="..\core\lua\lopcodes.h" />
+    <ClInclude Include="..\core\lua\lparser.h" />
+    <ClInclude Include="..\core\lua\lstate.h" />
+    <ClInclude Include="..\core\lua\lstring.h" />
+    <ClInclude Include="..\core\lua\ltable.h" />
+    <ClInclude Include="..\core\lua\ltm.h" />
+    <ClInclude Include="..\core\lua\lua.h" />
+    <ClInclude Include="..\core\lua\lua.hpp" />
+    <ClInclude Include="..\core\lua\luaconf.h" />
+    <ClInclude Include="..\core\lua\lualib.h" />
+    <ClInclude Include="..\core\lua\lundump.h" />
+    <ClInclude Include="..\core\lua\lvm.h" />
+    <ClInclude Include="..\core\lua\lzio.h" />
+    <ClInclude Include="..\core\util.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{60EB1459-13BC-4484-BB0D-C468EADB7B47}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>papaclient</RootNamespace>
+    <ProjectName>papa-client</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\tmp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\tmp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CURL_STATICLIB;_CRTDBG_MAP_ALLOC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\core;$(ProjectDir)..\core\lua;$(ProjectDir)include\curl;$(ProjectDir)include\tls</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;libcurl_a_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;CURL_STATICLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\core;$(ProjectDir)..\core\lua;$(ProjectDir)include\curl;$(ProjectDir)include\tls;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;libcurl_a.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
